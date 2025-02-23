@@ -127,3 +127,47 @@ footer {
     border-radius: 5px;
     display: none;
 }
+/* Centralizar tudo corretamente */
+.container {
+    max-width: 1200px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 0 20px; /* Adiciona um pequeno espaçamento nas laterais */
+}
+
+/* Garante que a hero fique sempre centralizada */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mantém os itens alinhados horizontalmente */
+    gap: 50px; /* Adiciona um espaço entre os elementos */
+}
+
+/* Ajuste no texto */
+.hero-text {
+    max-width: 50%;
+    text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+
+/* Ajuste da imagem */
+.hero-img img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 4px solid #e94560;
+}
+
+/* Responsividade: Mantém o layout igual no celular */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: row; /* Mantém os elementos lado a lado */
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 60%;
+    }
+
+    .hero-img img {
+        max-width: 200px;
+    }
+}
